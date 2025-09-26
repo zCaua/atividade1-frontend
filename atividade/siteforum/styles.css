@@ -1,0 +1,107 @@
+/* Estilos globais para o corpo da página */
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Adicione este estilo ao seu arquivo styles.css */
+.comment-user {
+    font-weight: bold; /* Deixa o nome do usuário em negrito (opcional) */
+    display: block; /* Garante que o nome ocupe uma linha inteira */
+}
+
+.comment-body {
+    display: block; /* Garante que o comentário fique em uma nova linha */
+    margin-top: 5px; /* Adiciona um espaçamento entre o nome e o comentário */
+}
+
+#comment-list {
+    list-style-type: none; /* Remove os pontos da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    margin-top: 20px;
+}
+
+.comment-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Estilo para a logo (agora dentro do contêiner de login) */
+.logo {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto -25px auto; /* Adicionando uma margem inferior para separar do título */
+}
+
+/* Estilo para os contêineres de login e fórum */
+.login-container,
+.forum-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Estilos para os campos de formulário */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Estilos para o botão */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
