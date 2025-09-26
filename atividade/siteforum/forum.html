@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <title>Fórum</title>
+</head>
+<body>
+  <main>
+
+  <section class="login-container" id="login-container">
+  <img src="./imgforum/imagem_2025-09-18_101810499-removebg-preview.png" alt="logo" class="logo">
+  <h2>Login</h2>
+
+  <div>
+  <label for="username">Usuário:</label>
+  <input type="text" id="username" placeholder="Digite seu usuário">
+  <label for="lname">Senha:</label>
+  </div>
+
+  <div>
+  <input type="password" id="password" placeholder="Digite sua senha">
+  <button onclick="login()"> Entrar </button>
+  </div>
+</section>
+
+<section class="forum-container" id="forum-container" style="display:none;">
+    <h2>Comentários</h2>
+    <label for="comment">Deixe seu comentário:</label>
+    <textarea id="comment" rows="4" placeholder="Digite aqui..."> </textarea>
+    <button onclick="comentar()"> Enviar Comentário </button>
+
+    <ul id="comment-list"></ul>
+</section>
+</main>
+</body>
+</html>
